@@ -1,5 +1,5 @@
 import { Wrench, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
-import auty from '../../assets/auty.svg'
+import auty from '../../assets/Logo3.svg'
 
 export function Footer() {
   return (

@@ -6,6 +6,7 @@ import { HowItWorksSection } from '../components/how-it-works-section'
 import { StatsSection } from '../components/stats-section'
 import { CTASection } from '../components/cta-section'
 import { Footer } from '../components/footer'
+import { LeadFormSection } from '../components/LeadFormSection'
 
 export default function ClienteLanding() {
     return (
@@ -18,6 +19,7 @@ export default function ClienteLanding() {
                     <HowItWorksSection />
                 </div>
                 <StatsSection />
+                <LeadFormSection />
                 <CTASection />
                 <Footer />
             </main>

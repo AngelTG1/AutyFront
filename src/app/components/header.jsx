@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { Wrench, Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { NavLink, useLocation } from "react-router-dom";
-import auty from '../../assets/auty.svg'
+import auty from '../../assets/Logo3.svg'
 
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

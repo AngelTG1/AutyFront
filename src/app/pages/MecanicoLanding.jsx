@@ -6,6 +6,7 @@ import MechanicHowItWorksSection from '../components/menic/MechanicHowItWorksSec
 import MechanicEarningsSection from '../components/menic/MechanicEarningsSection'
 import { Footer } from '../components/footer'
 import MechanicCtaSection from '../components/menic/MechanicCtaSection'
+import MechanicLeadFormSection from '../components/menic/MechanicLeadFormSection'
 
 
 export default function MecanicoLanding() {
@@ -16,6 +17,7 @@ export default function MecanicoLanding() {
                     <MecanicHero />
                     <MechanicBenefitsSection/>
                     <MechanicHowItWorksSection/>
+                    <MechanicLeadFormSection/>
                     <MechanicEarningsSection />
                     <MechanicCtaSection/>
                 </div>
