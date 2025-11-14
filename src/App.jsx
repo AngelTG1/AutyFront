@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./app/components/header";
 import { ScrollToTop } from "./app/components/ScrollToTop";
 import PrivacyPages from "./app/pages/PrivacyPages";
+import AboutPages from "./app/pages/AboutPages";
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <Header />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<ClienteLanding />} />
+          <Route path="/" element={<AboutPages />} />
+          <Route path="/client" element={<ClienteLanding />} />
           <Route path="/mecanico" element={<MecanicoLanding />} />
           <Route path="/global/es/privacy" element={<PrivacyPages />} />
         </Routes>

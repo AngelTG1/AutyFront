@@ -1,7 +1,9 @@
 import { Wrench, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import auty from '../../assets/Logo3.svg'
+import { NavLink, useLocation } from "react-router-dom";
 
 export function Footer() {
+  const location = useLocation();
   return (
     <footer className="bg-[#FDFDFE] border-t border-gray-300 py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
@@ -84,10 +86,14 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                  Política de privacidad
-                </a>
+                <NavLink
+                  to="/global/es/privacy"
+                  className="text-muted-foreground hover:text-primary text-sm transition-colors "
+                >
+                  Privacidad
+                </NavLink>
               </li>
+
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
                   Cookies

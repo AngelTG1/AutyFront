@@ -19,10 +19,10 @@ export function Header() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-white/80 to-white/30 backdrop-blur-lg border-b border-gray-200">
             <nav className="container mx-auto px-4 sm:px-6 lg:px-3">
-                <div className="flex items-center justify-between h-16 md:h-20">
+                <div className="flex items-center justify-between h-16 md:h-15">
                     {/* logo */}
                     <div className="flex items-center gap-3">
-                        <div className="flex-shrink-0 rounded-lg overflow-hidden w-12 h-12 md:w-14 md:h-14 ">
+                        <div className="flex-shrink-0 rounded-lg overflow-hidden w-8 h-8 md:w-10 md:h-10 ">
                             <img
                                 src={auty}
                                 alt="Auty Logo"
@@ -36,9 +36,16 @@ export function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
-                        <NavLink
+                         <NavLink
                             to="/"
                             className={`hover:text-blue-600 ${location.pathname === "/" ? "text-blue-600 font-semibold" : "text-gray-700"
+                                }`}
+                        >
+                            Quiénes somos
+                        </NavLink>
+                        <NavLink
+                            to="/client"
+                            className={`hover:text-blue-600 ${location.pathname === "/client" ? "text-blue-600 font-semibold" : "text-gray-700"
                                 }`}
                         >
                             Cliente
